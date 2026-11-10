@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# 环境变量与密钥
+.env
+.env.local
+*.key
+*.pem
+
+# 向量库持久化（体积小，随仓库提交，clone 后可直接演示）
+# 如需重新生成：在 backend 目录重新上传文档即可
+# backend/data/chroma_db/
+
+# 上传临时文件
+*.tmp
+*.log
+
+# 临时调试脚本（保留在本地，不纳入版本管理）
+backend/check_sources.py
+backend/ingest_and_test.py
+backend/test_metadata_filter.py
+backend/test_query.py
+
+# 编辑器
+.idea/
+.vscode/
+.DS_Store
+
+# Node（frontend 另有自己的 .gitignore，此处兜底）
+node_modules/
+dist/
